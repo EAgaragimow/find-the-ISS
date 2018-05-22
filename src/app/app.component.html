@@ -1,0 +1,26 @@
+<div class="wr">
+
+  <div class="ISS-located">
+    <app-iss-located-now></app-iss-located-now>
+  </div>
+
+  <div class="time">
+    <app-current-utc-time></app-current-utc-time>
+  </div>
+
+  <div class="ISSPositionOnMap">
+    <agm-map
+      [latitude]="num(this.iss_coords['latitude'])"
+      [longitude]="num(this.iss_coords['longitude'])"
+      [zoom]="zoom"
+    >
+      <agm-marker
+        [latitude]="num(this.iss_coords['latitude'])"
+        [longitude]="num(this.iss_coords['longitude'])"
+      ></agm-marker>
+    </agm-map>
+  </div>
+
+  <app-astronauts></app-astronauts>
+
+</div>

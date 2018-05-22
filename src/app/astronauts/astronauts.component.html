@@ -1,0 +1,8 @@
+<div class="composition">
+  <div class="astronaut" *ngFor="let people of peopleInSpace">
+    <p><img src="https://openclipart.org/download/247319/abstract-user-flat-3.svg" alt="astronaut-avatar"
+            class="astronaut-avatar">{{ people['name'] }}</p>
+  </div>
+</div>
+<p class="total-amount">Total amount: {{ peopleInSpace.length }} people on ISS</p>
+
