@@ -20,7 +20,6 @@ export class IssLocatedNowComponent implements OnInit {
       setInterval(() => {
         this.iss_position = this.issCoordinates.getPosition();
       }, 5000);
-      console.log(this.issCoordinates.getPosition());
     }, 2000);
 
   }

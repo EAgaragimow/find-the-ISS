@@ -21,7 +21,6 @@ export class CurrentUtcTimeComponent implements OnInit {
       setInterval(() => {
         this.date = this.timeService.getTimestamp();
       }, 5000);
-      console.log(this.date);
     }, 2500);
   }
 

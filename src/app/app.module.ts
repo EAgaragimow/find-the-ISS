@@ -11,6 +11,7 @@ import {AppComponent} from './app.component';
 import {AstronautsComponent} from './astronauts/astronauts.component';
 import {IssLocatedNowComponent} from './iss-located-now/iss-located-now.component';
 import {CurrentUtcTimeComponent} from './current-utc-time/current-utc-time.component';
+import { IssOnMapComponent } from './iss-on-map/iss-on-map.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {CurrentUtcTimeComponent} from './current-utc-time/current-utc-time.compo
     AppComponent,
     AstronautsComponent,
     IssLocatedNowComponent,
-    CurrentUtcTimeComponent
+    CurrentUtcTimeComponent,
+    IssOnMapComponent
   ],
   imports: [
     BrowserModule,
